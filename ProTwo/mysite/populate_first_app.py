@@ -32,7 +32,7 @@ def populate(n=5):
         webpg = WebPage.objects.get_or_create(topic=top, name=fake_name, url=fake_url)[0]
         
         #Create a fake access record for that webpag
-        acc_rec = AccessRecord.objects.get_or_create(name=webpg, date=fake_date)[0]
+        acc_rec = AccessRecord.object.get_or_create(name=webpg, date=fake_date)[0]
 if __name__ == '__main__':
     print('populating script!')
     populate(20)
